@@ -38,3 +38,12 @@ src/
 ├── App.tsx
 ├── types.ts
 └── main.tsx
+
+
+## Project Status
+
+This is a student-built frontend project focused on creating a practical utility application with persistent client-side data and a component-based React architecture.
+
+## License
+
+No open-source license has been added yet. Unless a license is added, the repository should not be treated as granting permission to reuse or redistribute the code.
