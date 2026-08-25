@@ -1,12 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Electricity Bill Calculator
 
-# Run and deploy your AI Studio app
+A simple, responsive electricity bill calculator built with React and TypeScript.
 
-This contains everything you need to run your app locally.
+The application helps users calculate their electricity consumption and estimated bill from meter readings, while keeping track of previous readings and bill history locally in the browser.
 
-View your app in AI Studio: https://ai.studio/apps/2946ad9e-fd41-4ebb-9084-6d6eba14ccdf
+## Features
+
+- Calculate electricity consumption from meter readings
+- Calculate estimated bill amount
+- Indian Rupee (₹) currency formatting
+- Track the number of days between meter readings
+- Persist the latest meter reading using `localStorage`
+- Maintain a local history of previous bills
+- Update the saved previous meter reading
+- Reset saved readings and clear bill history
+- Built-in meter reading guide
+- Responsive interface
+- Visual feedback after successful calculations
+
+## How It Works
+
+The application uses the difference between the previous and current meter readings to determine electricity consumption:
+
+```text
+Current Reading - Previous Reading
+              │
+              ▼
+       Units Consumed
+              │
+              ▼
+     Units × Rate per Unit
+              │
+              ▼
+       Estimated Bill
+
+## Project Structure
+src/
+├── components/
+│   ├── BillHistoryModal.tsx
+│   ├── ChangePreviousModal.tsx
+│   ├── FirstTimeSetupCard.tsx
+│   ├── Header.tsx
+│   ├── MeterReadingGuideModal.tsx
+│   ├── ResetConfirmModal.tsx
+│   ├── ResultCard.tsx
+│   └── ReturningUserCard.tsx
+│
+├── App.tsx
+├── types.ts
+└── main.tsx
 
 ## Run Locally
 
