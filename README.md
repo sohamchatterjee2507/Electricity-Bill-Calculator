@@ -20,19 +20,8 @@ The application helps users calculate their electricity consumption and estimate
 
 ## How It Works
 
-The application uses the difference between the previous and current meter readings to determine electricity consumption:
+The application uses the difference between the previous and current meter readings to determine electricity consumption
 
-```text
-Current Reading - Previous Reading
-              │
-              ▼
-       Units Consumed
-              │
-              ▼
-     Units × Rate per Unit
-              │
-              ▼
-       Estimated Bill
 
 ## Project Structure
 src/
